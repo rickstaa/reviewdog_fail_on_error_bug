@@ -15,10 +15,17 @@ Supplying the `-fail-on-error` flag with the `nofilter` or `file` filter modes t
 4. Now add the `-fail-on-error` flag (e.g. `eslint ./testdata/javascript | reviewdog -filter-mode="nofilter" -fail-on-error="true"`).
 5. See the warning appear and see the wrong exit code when your on the warning branch (see section below).
 
+## Other linter commands
+
+### Flake8
+
+```
+flake8 ./testdata/python/ | reviewdog -f=flake8 -filter-mode=nofilter -fail-on-error
+```
+
 ## Warning and error branch
 
-I also created a separate warnings branch on which all the linting errors have been removed.
-
+I also created a separate warnings branch on which all the linting errors for the `javascript` and `python` data have been removed. The only thing that is left are warnings.
 ## What goes wrong
 
 ### The warning message
