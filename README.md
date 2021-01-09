@@ -1,0 +1,1 @@
+# reviewdog_fail_on_error_bug
